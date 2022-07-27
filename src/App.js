@@ -1,12 +1,12 @@
 import { Component } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import CartPage from './CartPage/CartPage';
-import ALL from './Categories/All';
-import Clothes from './Categories/Clothes';
-import Tech from './Categories/Tech';
-import Header from './Header/Header';
-import Pdp from './PDP/Pdp';
+import CartPage from './componetns/CartPage/CartPage';
+import All from './componetns/Categories/All';
+import Clothes from './componetns/Categories/Clothes';
+import Tech from './componetns/Categories/Tech';
+import Header from './componetns/Header/Header';
+import Pdp from './componetns/PDP/Pdp'
 
 
 class App extends Component {
@@ -17,8 +17,8 @@ class App extends Component {
         <main className='main'>
           <Routes>
             <Route path='/pdp/:productId' element={<Pdp />} />
-            <Route path='/' element={<ALL index={0}/>} />
-            <Route path='/all' element={<ALL index={0} />} />
+            <Route path='/' element={<All index={0}/>} />
+            <Route path='/all' element={<All index={0} />} />
             <Route path='/clothes' element={<Clothes index={1} />} />
             <Route path='/tech' element={<Tech index={2} />} />
             <Route path='/cart_page' element={<CartPage/>} />

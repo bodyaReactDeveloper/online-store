@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import styles from "../PDP/Pdp.module.css"
+import styles from "../componetns/PDP/Pdp.module.css"
 
 const PaginatorImages = ({gallery,currentImage,setCurrentImage}) => {
 
